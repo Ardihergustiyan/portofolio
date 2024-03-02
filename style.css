@@ -1,0 +1,136 @@
+/* untuk elemen dalam body */
+body {
+  font-family: 'Quicksand', sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+/* mengatur ketebalan font */
+h1,
+h2,
+p {
+  font-weight: bold;
+}
+/* membuat semua h2 memiliki jarak */
+h2 {
+  margin-bottom: 2rem;
+}
+
+/* navbar */
+/* menjadi hitam saat dihover */
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link.active {
+  color: var(--dark-color);
+}
+/* warna font navbar jadi putih */
+.navbar-brand,
+.nav-link {
+  color: white; /* Ubah warna teks navbar menjadi putih */
+}
+/* ubah bg-color pada nabar */
+.custom-element {
+  background-color: #425c77;
+}
+
+
+/* jumbotron */
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #e2edff;
+}
+
+/* mengatur semua section */
+section {
+  padding-top: 5rem;
+}
+
+/* project dan education */
+#projects,
+#education {
+  background-color: #e2edff;
+}
+
+/* card education */
+.card1 {
+  box-shadow: 0 4px 10px 0 #425c77;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden; 
+}
+
+.card1 img {
+  transition: filter 0.3s ease; 
+}
+
+.card1:hover img {
+  filter: blur(5px); 
+}
+
+.card1-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; 
+  text-align: center; 
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+}
+
+.card1:hover .card1-body {
+  opacity: 1; 
+}
+/* end card education */
+
+/* css card untuk project */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.c-item {
+  height: 480px;
+}
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+/* end card project */
+
+/* start input table */
+/* border input table */
+.input {
+  width: 95%;
+  max-width: 500px;
+  margin: 20px auto 0px auto;
+  padding: 20px;
+  box-shadow: 0px 0px 3px 0px gray;
+}
+/* ubah warna tombol kirim */
+.custom-element2 {
+  background-color: #425c77; 
+  color: white; 
+  border: none; 
+  padding: 10px 20px; 
+  cursor: pointer; 
+  transition: background-color 0.3s, color 0.3s; 
+  font-weight: bold;
+}
+
+/* saat di hover berubah warna */
+.custom-element2:hover {
+  background-color: #e2edff; 
+  font-weight: bold;
+  color: black;
+}
+/* end input table */
