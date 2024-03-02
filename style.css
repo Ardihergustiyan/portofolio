@@ -1,6 +1,6 @@
 /* untuk elemen dalam body */
 * {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 body {
   font-family: 'Quicksand', sans-serif;
