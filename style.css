@@ -16,6 +16,7 @@ h1,
 h2,
 p {
   font-weight: bold;
+  overflow-x: initial;
 }
 /* membuat semua h2 memiliki jarak */
 h2 {
@@ -61,6 +62,7 @@ section {
   border-radius: 5px;
   position: relative;
   overflow: hidden;
+  overflow-x: initial;
 }
 
 .card1 img {
@@ -95,8 +97,10 @@ section {
 }
 
 .card:hover {
-  transform: scale(1.1);
+  transform: scale(0.9);
 }
+
+/* untuk link a */
 a {
   text-decoration: none;
   color: inherit;
@@ -138,3 +142,11 @@ a {
   color: black;
 }
 /* end input table */
+.row.text-center.mb-3.justify-content-center {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.col-md-4.mb-3 {
+  margin-bottom: 1rem; /* Sesuaikan dengan kebutuhan Anda */
+}
