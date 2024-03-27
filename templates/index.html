@@ -9,7 +9,7 @@
     <!-- icon bootsrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     <!-- mycss -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="static/style.css" />
     <!-- My Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,7 +19,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg custom-element shadow-sm fixed-top">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="https://github.com/Ardihergustiyan" target="_blank">Ardi</a>
+        <a class="navbar-brand fw-bold" href="#home">Ardi</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -47,8 +47,8 @@
     <!-- Tutup Navbar -->
     <!-- Jumbotron -->
     <section class="jumbotron text-center">
-      <a href="https://www.instagram.com/haiardiii/" target="_blank">
-        <img src="img/ardi.jpg" alt="ardi" width="200" class="rounded-circle" />
+      <a href="https://github.com/Ardihergustiyan" target="_blank">
+        <img src="static/img/ardi.jpg" alt="ardi" width="200" class="rounded-circle" />
       </a>
       <h1 class="display-4 fw-medium">Ardi Hergustiyan</h1>
       <p class="lead fw-medium">Student | Fullstack Developer</p>
@@ -96,7 +96,7 @@
         <div class="row text-center mb-3 justify-content-center">
           <div class="col-md-4 mb-3">
             <div class="card1 h-100 custom-element">
-              <img src="img/Education2.png" class="card1-img-top img-fluid" alt="project1" />
+              <img src="static/img/Education2.png" class="card1-img-top img-fluid" alt="project1" />
               <div class="card1-body">
                 <p class="card1-text">University Muhammadiyah of Surakarta (UMS) <br />2021-present</p>
               </div>
@@ -104,7 +104,7 @@
           </div>
           <div class="col-md-4 mb-3">
             <div class="card1 h-100 custom-element">
-              <img src="img/Education1.jpg" class="card1-img-top img-fluid" alt="project1" />
+              <img src="static/img/Education1.jpg" class="card1-img-top img-fluid" alt="project1" />
               <div class="card1-body">
                 <p class="card1-text">
                   SMAN 2 PATI <br />
@@ -129,7 +129,7 @@
           <div class="col-md-4 mb-3">
             <div class="card h-100">
               <a href="http://Ardihergustiyan.github.io" target="_blank">
-                <img src="img/project1.png" class="card-img-top img-fluid" alt="project1" />
+                <img src="static/img/project1.png" class="card-img-top img-fluid" alt="project1" />
                 <div class="card-body">
                   <p class="card-text">Create a landing page website using basic HTML and CSS with semantic HTML for layouting.</p>
                 </div>
@@ -139,7 +139,7 @@
           <div class="col-md-4 mb-3">
             <div class="card h-100">
               <a href="https://github.com/Ardihergustiyan/lemisun-ecomerce-laravel" target="_blank">
-                <img src="img/project2.png" class="card-img-top img-fluid" alt="project1" />
+                <img src="static/img/project2.png" class="card-img-top img-fluid" alt="project1" />
                 <div class="card-body">
                   <p class="card-text">Develop an ecommerce website using Laravel from start to finish.</p>
                 </div>
@@ -149,7 +149,7 @@
           <div class="col-md-4 mb-3">
             <div class="card h-100">
               <a href="https://ardihergustiyan.github.io/favorite-movie/" target="_blank">
-                <img src="img/project3.png" class="card-img-top img-fluid" alt="project1" />
+                <img src="static/img/project3.png" class="card-img-top img-fluid" alt="project1" />
                 <div class="card-body">
                   <p class="card-text">Create a favorite movie website using Bootstrap 5.</p>
                 </div>
@@ -210,6 +210,25 @@
       Web Portofolio By <a href="https://www.instagram.com/haiardiii/" target="_blank">Ardi Hergustiyan <i class="bi bi-instagram"></i></a>
     </footer>
     <!-- Akhir Footer -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Ambil semua link navbar
+        const navLinks = document.querySelectorAll('.navbar-nav a');
+
+        // Iterasi setiap link navbar
+        navLinks.forEach(function (navLink) {
+          // Tambahkan event listener saat link diklik
+          navLink.addEventListener('click', function () {
+            // Cek apakah navbar dalam mode collapsed
+            const navbarCollapse = document.querySelector('.navbar-collapse');
+            if (navbarCollapse.classList.contains('show')) {
+              // Jika dalam mode collapsed, tutup navbar
+              navbarCollapse.classList.remove('show');
+            }
+          });
+        });
+      });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
